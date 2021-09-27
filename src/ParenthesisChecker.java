@@ -8,9 +8,15 @@ public class ParenthesisChecker {
         System.out.println(validate("((3+2)"));      // Incorrect
         System.out.println(validate("(3+2()"));      // Incorrect
         System.out.println(validate("(3+2())"));     // Correct
-        System.out.println(validate("(3+2())()()()()jjfjfjfjfj("));     // InCorrect
+        System.out.println(validate("(3+2())()()()()s("));     // InCorrect
     }
 
+    /**
+     * Evaluate if a passed string has the parenthesis correctly closed
+     * @param text - the string to evaluate
+     * @return String
+     *
+     */
     public static String validate(String text) {
 
         // Replace the synchronized class "Stack" by an unsynchronized one such as "Deque". for a better performance
